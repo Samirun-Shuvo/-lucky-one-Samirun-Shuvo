@@ -3,20 +3,21 @@ import './ProductDetails.css'
 
 
 const ProductDetails = (props) => {
-  const {id, name, Price, imgUrl} = props.product
+  const { id, name, Price, imgUrl } = props.product
   const addToCartHandler = props.handelAddProduct;
 
   return (
     <div className='product-content'>
       <div className='content'>
         <div className='img'>
-        <img src={imgUrl} alt=""/>
+          <img src={imgUrl} alt="" />
         </div>
+        <h3>Product id:{id}</h3>
         <h5>{name}</h5>
         <p>TK.{Price}</p>
       </div>
 
-      <button onClick={()=> addToCartHandler(props.product)} type="">Add To Cart</button>
+      <button onClick={() => addToCartHandler(props.product)} type="">Add To Cart</button>
     </div>
   );
 };

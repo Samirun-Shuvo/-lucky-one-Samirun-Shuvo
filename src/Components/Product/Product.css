@@ -28,3 +28,10 @@
 .choseBtn{
   /* margin-top: 28vh; */
 }
+@media (max-width:600px) {
+  .productContainer{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 25px;
+}
+}

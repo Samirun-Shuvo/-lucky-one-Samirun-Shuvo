@@ -1,10 +1,12 @@
 
+import Answer from './Components/Answer/Answer';
 import Home from './Components/Home/Home';
 
 function App() {
   return (
     <div className="App">
-      <Home/>
+      <Home />
+      <Answer></Answer>
     </div>
   );
 }
