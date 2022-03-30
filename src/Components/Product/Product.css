@@ -1,0 +1,30 @@
+.productContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.cartContainer{
+  height: 61vh;
+  border: 1px solid gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: scroll;
+}
+
+.cartContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.clearBtn, .choseBtn{
+  
+  width: 220px;
+  border: none;
+  background-color: rgb(52 61 114);
+  color: rgb(255, 255, 255);
+  padding: 12px 0px;
+  border-radius: 5px;
+}
+.choseBtn{
+  /* margin-top: 28vh; */
+}
